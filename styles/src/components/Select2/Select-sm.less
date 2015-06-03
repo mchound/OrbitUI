@@ -1,0 +1,41 @@
+[data-am-select]{
+
+	@gutter: 20px;
+	@gutter-half: @gutter/2;
+
+	.header{
+		padding: @gutter-half;
+	}
+
+	.search{
+		padding: @gutter-half;
+		padding-bottom: 0;
+
+		&:before{
+			top: 15px;
+			left: 10px;
+		}
+	}
+
+	.drop-down{
+		position: absolute;
+		bottom: inherit;
+
+		&.hide{	
+			visibility: hidden;
+			left: 0;
+			right: 0;
+			opacity: 0;
+		}
+	}
+
+	.options{
+		max-height: 50vh;
+		position: static;
+
+		li{
+			padding: @gutter-half;
+		}
+	}
+
+}
